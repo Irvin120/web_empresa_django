@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Service(models.Model):
     title = models.CharField(max_length=200,
         verbose_name="Titulo")
@@ -15,6 +14,7 @@ class Service(models.Model):
         verbose_name="Fecha de creacion")
     updated = models.DateTimeField(auto_now=True,
         verbose_name="Fecha de edicion")
+
 
 
     class Meta:
